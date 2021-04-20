@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+/* INICIO DO CABEÇALHO*/
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 40px auto;
+    padding: 5px;
+    border: 1px solid black;   
+    background:transparent; 
+}
+
+
+.logo img{
+     
+   width: 50px;
+   padding: 20px;
+   margin: 20px;
+   background:transparent; 
+} 
+
+.titulo{
+   
+    background:transparent; 
+   padding: 20px;
+   margin: 20px;
+}
+.menu{
+   
+    background:transparent; 
+    padding: 20px;
+    margin: 20px;
+}
+
+/*INICIO DO FORMULÁRIO*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 40px auto;
+    padding: 5px;
+}
+
+/*INICIO DO CORPO*/
+.corpo{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 40px auto;
+    padding: 5px;
+
+}
+
+/*INICIO DO ITEM */
+.item{
+    width: 240px;
+    height: 350px;
+    margin: 40px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: tomato;
+
+}
+.corpo .item h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.corpo .item img{
+    margin-top:20px ;
+    position: relative;
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    
+}
+.corpo .item p{
+    text-align: justify;
+    margin: 5px;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.corpo .item h3{
+text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
