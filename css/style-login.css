@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+
+}
+.container{
+    background-color: darkcyan;
+    border-radius: 10px 50px;
+    margin: 100px auto;
+    padding: 10px;
+    width: 30%;
+}
+.container .log{
+   margin: 5px auto;
+   width: 150px;
+}
+
+.container .log h1{
+    text-align: center;
+    color: white;
+    padding: 5px;
+ }
+ .container .log .bot{
+  
+  padding: 10px;
+ 
+}
+
+.container .log button{
+    background-color: yellowgreen;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 15pt;
+    position: relative;
+    left: 10%;
+    
+   
+    
+}
+.container .log button:hover{
+    background-color: rgb(61, 71, 42);
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: thistle;
+    font-size: 16pt;
+    
+}
+
+.container .log table{
+   /* border: 1px solid black*/
+ }

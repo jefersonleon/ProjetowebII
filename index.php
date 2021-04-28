@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -22,25 +23,27 @@
             <img src="img/logo.png" alt="Logotipo">
         </div>
     </header>
+    <?php require_once 'includes/banco.php'?>
     
-    <div class="form">
-        <h1>Formulario de entrada:</h1><br><br>
-        <form action="" method="post">
-        <label for="quant">Quantidade Itens:</label>    
-        <input type="number" name="num" id="num" >
-        <input type="submit" value="Gerar">
-        </form>
-    </div>
     <div class="corpo">
         <?php
-            if(!empty($_POST['num'])){
-                $num = $_POST['num'];
-                for($i=0; $i < $num; $i++){
+         
+         $busca = $banco->query("select nome, descricao, nota, capa from tbgames order by nome");
+         
+         if(!$busca){
+             echo"<p> Falha na busca! $banco->error</p>";
+         }else{
+       
+             while($reg = $busca->fetch_object())
+             {
+              
+
+
                     echo"<div class='item'>
-                        <h2>TITULO</h2>
-                        <img src='img/mario.jpg' alt='Mario'>
-                        <p>Jogo de plataforma, onde o personagem anda em um mundo e mata vilões pelo caminho.</p>
-                        <h3>[Plataforma] - Nintendo</h3>
+                        <h2>$reg->nome</h2>
+                        <img src='$reg->capa' alt='Imagem'>
+                        <p>$reg->descricao</p>
+                        <h3>[Tipo] - Fabricante</h3>
                     </div>";
                 }
             }

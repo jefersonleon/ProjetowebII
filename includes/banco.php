@@ -11,7 +11,11 @@
        echo "<p> Encontrei um erro $banco->errno --> $banco->connect_error </p>";
        die();
    }
-
+   
+   /*else{
+     echo "Conectado com sucesso!!";
+   }
+*/
      $banco->query("SET NAMES 'utf8");
      $banco->query("SET character_set_connection=utf8");
      $banco->query("SET character_set_cliente=utf8");
@@ -19,8 +23,9 @@
 
 /*
    $busca = $banco->query("select * from tbgeneros order by genero");
+   var_dump($busca);
    if(!$busca){
-       echo"<p. Falha na busca! $banco->error</p>";
+       echo"<p> Falha na busca! $banco->error</p>";
    }else{
     echo" Lista de Generos<br>";
        while($reg = $busca->fetch_object())
